@@ -11,6 +11,7 @@ return {
     config = function()
       local dap = require("dap")
       local ui = require("dapui")
+      package.loaded["mason-nvim-dap.mappings.configurations"] = {}
       local mason_dap = require("mason-nvim-dap")
       local dap_virtual_text = require("nvim-dap-virtual-text")
 
